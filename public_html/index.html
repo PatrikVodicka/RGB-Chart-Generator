@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <title>RGB Chart Generator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="icon/chart-icon.png">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="sidebar">
+            <div class="sidebar-button"><span class="glyphicon glyphicon-menu-left"></span></div>
+            <h4 class="text-primary text-center">RGB Chart Generator</h4>
+            <h5 class="text-primary text-center">by</h5>
+            <h5 class="text-primary text-center">Patrik Vodička</h5>
+            <div class="container-fluid">
+                <label class="btn btn-block btn-primary">
+                    Select image<input id="imgInp" type="file" style="display: none;" accept="image/*">
+                </label>
+                <label id="clearBtn" class="btn btn-block btn-primary">
+                    Clear
+                </label>
+            </div>
+        </div>
+        <div class="container center-block row">
+            <div id="imgWrapper" class="container col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <canvas id="imgCvs" style="display: none"></canvas>
+            </div>
+            <div class="col-sm-2"></div>
+            <div id="chartWrapper" class="container col-lg-4 col-md-4 col-sm-8 col-xs-12">
+                <canvas id="chart" style="display: none"></canvas>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+        
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/Chart.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
