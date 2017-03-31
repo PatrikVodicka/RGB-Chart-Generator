@@ -1,4 +1,5 @@
 $(function(){
+    $(".souhrn").parent().remove();
     //generates chart from input after img select
     $("#imgInp").on("change",function(e){
         var img = getImage(e.target);
